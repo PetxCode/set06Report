@@ -24,16 +24,6 @@ app.use(cors({
 
 app.use(express.json());
 
-<<<<<<< HEAD
-app.use("/", async (req, res) => {
-	res.status(200).json({ message: "server is running on fine" });
-});
-=======
-//  app.use("/", async (req, res) => {
-//  	res.status(200).json({ message: "server is running on fine" });
-//  });
->>>>>>> 217ce4a9723a60775ec2e090cd84cfce2af1dcc8
-
 app.use("/user", require("./routes/userRouter"));
 
 app.listen(port, () => {
