@@ -6,9 +6,11 @@ const url = "mongodb://localhost/report";
 const urlOnline =
 	"mongodb+srv://PeterPan:PeterPan@codelab.eqkgv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
+const onlineURL = "mongodb+srv://PeterPan:PeterPan@codelab.eqkgv.mongodb.net/set06report?retryWrites=true&w=majority"
+
 const port = process.env.PORT || 2234;
 
-mongoose.connect(urlOnline).then(() => {
+mongoose.connect(onlineURL).then(() => {
 	console.log("database connected...!");
 });
 
